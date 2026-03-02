@@ -1,7 +1,7 @@
 # skill-mcp-use
 
 > **other skills by [@yigitkonur](https://github.com/yigitkonur):**
-> [testing mcp servers](https://github.com/yigitkonur/skill-mcp-server-tester) · [extracting design dna from dashboards](https://github.com/yigitkonur/skill-design-soul-saas) · [converting saved webpages to next.js](https://github.com/yigitkonur/skill-snapshot-to-nextjs) · [generating devin review config](https://github.com/yigitkonur/skill-devin-review-init) · [generating greptile review config](https://github.com/yigitkonur/skill-greptile-init) · [mcp server for searching skills](https://github.com/yigitkonur/mcp-skills-as-context)
+> [testing mcp servers](https://github.com/yigitkonur/skill-mcp-server-tester) · [extracting design dna from dashboards](https://github.com/yigitkonur/skill-design-soul-saas) · [converting saved webpages to next.js](https://github.com/yigitkonur/skill-snapshot-to-nextjs) · [generating devin review config](https://github.com/yigitkonur/skill-devin-review-init) · [generating greptile review config](https://github.com/yigitkonur/skill-greptile-init) · [mcp server for searching skills](https://github.com/yigitkonur/mcp-skills-as-context) · [tauri observability & mcp bridge](https://github.com/yigitkonur/skill-tauri-mcp)
 
 a claude code skill that reviews, tests, and migrates python applications built with the [`mcp-use`](https://github.com/mcp-use/mcp-use) library. catches the 6 derailment patterns ai agents fall into when working with mcp-use codebases — confusing server sdks with client sdks, botching async lifecycles, using wrong schema field names, and more.
 
