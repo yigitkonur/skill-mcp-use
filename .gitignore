@@ -8,3 +8,11 @@ dist/
 build/
 *.egg-info/
 .venv/
+
+# Installed skills (agent-local, never commit)
+.agents/skills/
+.claude/skills/
+.windsurf/skills/
+.cursor/
+.augment/
+
