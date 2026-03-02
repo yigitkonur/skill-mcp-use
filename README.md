@@ -38,25 +38,25 @@ each pattern includes the exact code the agent writes, why it fails, how to dete
 - **detection-oriented** — every derailment pattern has a concrete grep command. the review checklist has 22 items, all verifiable by searching the codebase.
 - **covers the full stack** — client consumption (python), server creation (typescript + python), langchain bridge, auth flows, session storage, deployment.
 
-## usage
+### usage
 
 ```
-review this mcp-use application for correctness
-```
-
-```
-check if this code is using mcp-use correctly or mixing up server/client sdks
+review my mcp-use integration and check for the 6 derailment patterns
 ```
 
 ```
-migrate this typescript mcp server to use mcp-use instead of the raw sdk
+is my async lifecycle correct? check create_session, list_tools, call_tool order
 ```
 
 ```
-test this mcp-use client — verify it connects, discovers tools, and calls them properly
+migrate this typescript mcp server code to mcp-use python
 ```
 
-## file overview
+```
+validate my mcp config dict — am i using the right transport keys?
+```
+
+### file overview
 
 | file | lines | what it covers |
 |------|-------|---------------|
@@ -74,13 +74,13 @@ test this mcp-use client — verify it connects, discovers tools, and calls them
 
 **total: 3,923 lines across 11 files.**
 
-## scope
+### scope
 
-**built for:** python apps using `mcp-use` as a client, typescript/python servers built with mcp-use's server sdk, migrations from the official `@modelcontextprotocol/sdk`
+**built for:** python codebases using the [`mcp-use`](https://github.com/mcp-use/mcp-use) library (`pip install mcp-use`). reviews, tests, and migrations of mcp client code.
 
-**not for:** building mcp servers from scratch with the official sdk — use the [official mcp docs](https://modelcontextprotocol.io) instead. for testing mcp servers through the inspector, use [skill-mcp-server-tester](https://github.com/yigitkonur/skill-mcp-server-tester).
+**not for:** building mcp servers (use the official `@modelcontextprotocol/sdk`). not for typescript mcp clients. not for testing mcp servers (use [skill-mcp-server-tester](https://github.com/yigitkonur/skill-mcp-server-tester) instead).
 
-## install
+### install
 
 ```bash
 npx skills add yigitkonur/skill-mcp-use
@@ -88,6 +88,6 @@ npx skills add yigitkonur/skill-mcp-use
 
 > works with claude code, cursor, codex, copilot, windsurf, and [30+ other agents](https://skills.sh).
 
-## license
+### license
 
 mit
