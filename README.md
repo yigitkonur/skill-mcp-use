@@ -1,7 +1,10 @@
 # skill-mcp-use
 
-> **other skills by [@yigitkonur](https://github.com/yigitkonur):**
-> [generating copilot review config](https://github.com/yigitkonur/skill-copilot-review) · [testing mcp servers](https://github.com/yigitkonur/skill-mcp-server-tester) · [extracting design dna from dashboards](https://github.com/yigitkonur/skill-design-soul-saas) · [converting saved webpages to next.js](https://github.com/yigitkonur/skill-snapshot-to-nextjs) · [generating greptile review config](https://github.com/yigitkonur/skill-greptile-init) · [generating devin review config](https://github.com/yigitkonur/skill-devin-review-init) · [tauri observability & mcp bridge](https://github.com/yigitkonur/skill-tauri-mcp) · [mcp server for searching skills](https://github.com/yigitkonur/mcp-skills-as-context)
+```bash
+npx skills add yigitkonur/skill-mcp-use
+```
+
+> [copilot review setup](https://github.com/yigitkonur/skill-copilot-review) · [devin review setup](https://github.com/yigitkonur/skill-devin-review-init) · [greptile review setup](https://github.com/yigitkonur/skill-greptile-init) · [mcp server testing](https://github.com/yigitkonur/skill-mcp-server-tester) · [design dna extraction](https://github.com/yigitkonur/skill-design-soul-saas) · [snapshot to nextjs](https://github.com/yigitkonur/skill-snapshot-to-nextjs) · [tauri mcp tools](https://github.com/yigitkonur/skill-tauri-mcp)
 
 a claude code skill that reviews, tests, and migrates python applications built with the [`mcp-use`](https://github.com/mcp-use/mcp-use) library. catches the 6 derailment patterns ai agents fall into when working with mcp-use codebases — confusing server sdks with client sdks, botching async lifecycles, using wrong schema field names, and more.
 
@@ -79,14 +82,6 @@ validate my mcp config dict — am i using the right transport keys?
 **built for:** python codebases using the [`mcp-use`](https://github.com/mcp-use/mcp-use) library (`pip install mcp-use`). reviews, tests, and migrations of mcp client code.
 
 **not for:** building mcp servers (use the official `@modelcontextprotocol/sdk`). not for typescript mcp clients. not for testing mcp servers (use [skill-mcp-server-tester](https://github.com/yigitkonur/skill-mcp-server-tester) instead).
-
-## install
-
-```bash
-npx skills add yigitkonur/skill-mcp-use
-```
-
-> works with claude code, cursor, codex, copilot, windsurf, and [30+ other agents](https://skills.sh).
 
 ## license
 
